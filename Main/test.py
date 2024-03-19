@@ -309,10 +309,10 @@ with map_face_mesh.FaceMesh(min_detection_confidence=0.5, min_tracking_confidenc
                 key = 2
                 re_yawn2 = "open mouth"
                 re_yawn = "open mouth"
-                keyboard.press(Key.down)                      
+                #keyboard.press(Key.down)                      
             else: 
                 re_yawn = "close mouth"
-                keyboard.release(Key.down)
+                #keyboard.release(Key.down)
 
             if re_yawn2 == "open mouth" and  re_yawn == "close mouth" :
                 TOTAL_Yawn += 1
@@ -320,9 +320,9 @@ with map_face_mesh.FaceMesh(min_detection_confidence=0.5, min_tracking_confidenc
 
             if key == 2 :
                 key = 0
-            elif key == 1 :
-                keyboard.press(Key.space)
-                keyboard.release(Key.space)
+            #elif key == 1 :
+                #keyboard.press(Key.space)
+                #keyboard.release(Key.space)
 
             if center <= -50 :
                 frame = utils.textWithBackground(frame, f'Left : {center}', FONTS, 1.0, (30, 300), bgOpacity=0.9, textThickness=2)
