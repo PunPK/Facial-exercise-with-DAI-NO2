@@ -233,7 +233,7 @@ c = 3
 window = tk.Tk()
 window.title("Facial exercise with DAI-NO")
 
-video = cv2.VideoCapture(0)
+video = cv2.VideoCapture(1)
 with map_face_mesh.FaceMesh(min_detection_confidence=0.5, min_tracking_confidence=0.5) as face_mesh:
     start_time = time.time()
     start_n = time.time()

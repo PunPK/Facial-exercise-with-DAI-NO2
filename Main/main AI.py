@@ -296,12 +296,12 @@ key = 0
 
 c = 3
 
-#learn_inf_eye = load_learner('Model\Teye_ModelsfromScratch.pkl')
-learn_inf_eye = load_learner('Model\eye_data_resnet18_fastai.pkl')
-learn_inf_yawn = load_learner('Model\yawn_data_resnet18_fastai.pkl')
-#learn_inf_yawn = load_learner('Model\yawn_ModelsfromScratch.pkl')
+learn_inf_eye = load_learner('Model\Teye_ModelsfromScratch.pkl')
+#learn_inf_eye = load_learner('Model\eye_data_resnet18_fastai.pkl')
+#learn_inf_yawn = load_learner('Model\yawn_data_resnet18_fastai.pkl')
+learn_inf_yawn = load_learner('Model\yawn_ModelsfromScratch.pkl')
 
-video = cv2.VideoCapture(0)
+video = cv2.VideoCapture(1)
 with map_face_mesh.FaceMesh(min_detection_confidence=0.5, min_tracking_confidence=0.5) as face_mesh:
     start_time = time.time()
     start_n = time.time()
